@@ -24,12 +24,14 @@ games.forEach(game => {
 const playButton = document.getElementById('playButton')
 if (playButton) {
   const container = document.getElementById('animationContainer')
+  const videoContainer = document.getElementById('videoContainer')
   playButton.addEventListener('click', () => {
     container.innerHTML = 'Завантаження GTA SAMP...'
     setTimeout(() => {
       container.innerHTML = 'Вітаємо!'
       setTimeout(() => {
         container.innerHTML = 'Дякуємо що вибрали Grand Theft Auto VI і дякуємо що ви досі це слухаєте'
+        videoContainer.style.display = 'block'
         setTimeout(() => {
           container.innerHTML = 'Ми отримали всі ваші особисті дані ОЛУХ BAY BAY'
         }, 4000)
